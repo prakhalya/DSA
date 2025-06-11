@@ -6,7 +6,7 @@ public class Linkedlistdel {
         Node next;
         Node(int value) {
             this.value = value;
-        }
+      }
     }
     private Node head;
     public void add(int value) {
