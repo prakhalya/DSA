@@ -14,8 +14,8 @@ package addon;
 	    public void insert(int data) {
 	        Node newNode = new Node(data);
 
-	        if (head == null) {
-	            head = newNode;
+	        if (head==null) {
+	            head=newNode;
 	        } else {
 	            Node temp = head;
 	            while (temp.next != null) {
@@ -95,7 +95,7 @@ package addon;
 	                default:
 	                    System.out.println("Invalid choice. Please try again.");
 	            }
-	        } while (choice != 4);
+	        } while(choice != 4);
 	        sc.close();
 	    }
 	}
