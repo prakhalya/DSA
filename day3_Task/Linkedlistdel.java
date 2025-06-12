@@ -4,14 +4,11 @@ public class Linkedlistdel {
     static class Node {
         int value;
         Node next;
-
         Node(int value) {
             this.value = value;
-        }
+      }
     }
-
     private Node head;
-
     public void add(int value) {
         Node newNode = new Node(value);
         Node current = head;
@@ -24,7 +21,6 @@ public class Linkedlistdel {
         }
         current.next = newNode;
     }
-
     public void insertAt(int value, int position) {
         Node newNode = new Node(value);
         if (position <= 0 || head == null) {
@@ -41,7 +37,6 @@ public class Linkedlistdel {
         newNode.next = current.next;
         current.next = newNode;
     }
-
     public void deleteAt(int position) {
         if (head == null) return;
 
@@ -49,7 +44,6 @@ public class Linkedlistdel {
             head = head.next;
             return;
         }
-
         Node current = head;
         int index = 0;
         while (current != null && index < position - 1) {
@@ -61,7 +55,6 @@ public class Linkedlistdel {
         }
         current.next = current.next.next;
     }
-
     public void traverse() {
         Node current = head;
         if (current == null) {
@@ -75,7 +68,6 @@ public class Linkedlistdel {
         }
         System.out.println();
     }
-
     public static void main(String[] args) {
         Linkedlistdel list = new Linkedlistdel();
         list.add(5);
