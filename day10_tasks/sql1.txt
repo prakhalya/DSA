@@ -1,0 +1,6 @@
+create database java;
+use java;
+create table infos(
+name varchar(20),department varchar(20),section varchar(20),marks int);
+insert into infos values ('Prakhalya','CS','B',75), ('anu','BCA','A',95),('kaushi','BSC IT','C',60),('tinuja','BCA','B',45),('suwetha','BSC IT','B',67);
+select * from infos;

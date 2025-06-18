@@ -1,0 +1,3 @@
+select * from infos
+where marks<60;
+select name,department,section from infos;
